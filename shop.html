@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop | Modexclub</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+</head>
+<body>
+
+  <nav>
+    <h2 class="logo">MODEXCLUB</h2>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="#">Login</a>
+    </div>
+  </nav>
+  <!-- Slider Container -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="https://www.primalgray.com/blogs/news/latest-trends-for-gen-z-you-must-know?srsltid=AfmBOooK17SFbLHz75kdFxtQpTcbKdostuKs-xwhHzzBJcfQ0O8sty7-" alt="Slide 1"></div>
+    <div class="swiper-slide"><img src="https://shoppingfactory23.in/products/korean-y2k-street-style-oversized-partywear-genz-black-faux-leather-jacket-for-mens-shopping-factory23?srsltid=AfmBOorOZN4Ta6_KGakDq24IduGoCBSkCSMdhp8Y9q_VZ213Rlqc5H9L" alt="Slide 2"></div>
+    <div class="swiper-slide"><img src="https://www.pinterest.com/pin/gen-z-mens-fashion-defining-trends-for-a-new-generation--941463497088748494/" alt="Slide 3"></div>
+    <div class="swiper-slide"><img src="https://shoppingfactory23.in/products/korean-y2k-street-style-oversized-partywear-genz-black-faux-leather-jacket-for-mens-shopping-factory23?srsltid=AfmBOoqx8CsT6WcicQugQK_-FEQyn7ZDEqx3HunI3otcW5y_e7TkD4me" alt="Slide 4"></div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- Navigation -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+
+  <header class="shop-header">
+    <h1>Shop All</h1>
+    <p>Limited pieces. Designed for Gen-Z.</p>
+  </header>
+
+  <section class="products">
+
+    <div class="product">
+      <img src="https://via.placeholder.com/250" alt="Oversized Hoodie">
+      <h3>Oversized Hoodie</h3>
+      <p>₹1499</p>
+      <button onclick="buy()">Buy</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/250" alt="Street Jacket">
+      <h3>Street Jacket</h3>
+      <p>₹2499</p>
+      <button onclick="buy()">Buy</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/250" alt="Co-ord Set">
+      <h3>Co-ord Set</h3>
+      <p>₹2999</p>
+      <button onclick="buy()">Buy</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/250" alt="Black Hoodie">
+      <h3>Black Hoodie</h3>
+      <p>₹1599</p>
+      <button onclick="buy()">Buy</button>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2025 Modexclub. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+</body>
+</html>
